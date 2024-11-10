@@ -1,0 +1,23 @@
+.portfolioContainer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .portfolioCenter {
+        max-width: 1440px;
+        padding: 40px;
+        height: fit-content;
+        display: flex;
+        gap: 40px;
+
+        .cardsList {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: space-around;
+        }
+    }
+}

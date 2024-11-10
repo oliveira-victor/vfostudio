@@ -1,8 +1,9 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Portfolio from "./containers/Portfolio";
 
 export default function Home() {
   return (
-    <h1>VFO Studio</h1>
+    <Portfolio />
   );
 }
