@@ -22,7 +22,10 @@ body {
   font-family: open-sans, sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: playtime, sans-serif;
 }
 
@@ -54,3 +57,9 @@ a {
   transform: rotate(-3deg);
 }
 
+.straightenCard {
+
+  @media (max-width: 767px) {
+    transform: rotate(0deg);
+  }
+}
