@@ -13,16 +13,13 @@ type Props = {
 }
 
 export default function Card({ title, img, effect, color }: Props) {
-
     const cardRef = useRef<HTMLDivElement>(null)
-
     const [moveCard, setMoveCard] = useState(false)
 
     const handleTitleLength = (name: string) => {
         if (name.length >= 22) {
             return '16px'
         }
-
         return '22px'
     }
 
@@ -35,16 +32,17 @@ export default function Card({ title, img, effect, color }: Props) {
             }
         }, { threshold: [1] })
 
-        if (cardRef.current) {
-            observer.observe(cardRef.current)
+        const currentRef = cardRef.current
+
+        if (currentRef) {
+            observer.observe(currentRef)
         }
 
         return () => {
-            if (cardRef.current) {
-                observer.unobserve(cardRef.current)
+            if (currentRef) {
+                observer.unobserve(currentRef)
             }
         }
-
     }, [])
 
     const mobileCardMovement = () => {

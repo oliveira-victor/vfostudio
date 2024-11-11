@@ -1,4 +1,4 @@
-import Card from '@/app/components/card'
+import Card from '@/app/components/Card'
 import styles from './portfolio.module.css'
 
 import pf01 from '../../assets/pf01.webp'
