@@ -41,9 +41,13 @@ export default function Hero() {
                         <button className={styles.heroBtn} type="button">Links</button>
                     </li>
                 </ul>
+                <div className={styles.langContainer}>
+                    <button type="button" className={styles.langBtn}><img src="./icon-uk.svg" alt="English language icon" /></button>
+                    <button type="button" className={styles.langBtn}><img src="./icon-br.svg" alt="Portuguese language icon" /></button>
+                </div>
             </menu>
             <PaperBoat />
-            <img className={styles.paper} src="./paper.webp" alt="" />
+            <img className={styles.paper} src="./paper.webp" alt="Piece of paper" />
         </div>
     )
 }
