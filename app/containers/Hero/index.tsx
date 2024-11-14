@@ -1,8 +1,21 @@
 
 import PaperBoat from '@/app/parallax/PaperBoat'
 import styles from './hero.module.css'
+import FlyingWhale from '@/app/parallax/FlyingWhale'
 
 export default function Hero() {
+
+    /* const parallaxArts = [
+        { art: <PaperBoat /> },
+        { art: <FlyingWhale /> }
+    ]
+
+    const getRandomParallax = (data: any) => {
+        const dataLength = data.length;
+        const randomNumber = Math.floor(Math.random() * dataLength);
+        
+        return data[randomNumber].art
+    } */
 
     return (
         <div className={styles.heroContainer}>

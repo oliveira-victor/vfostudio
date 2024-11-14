@@ -51,20 +51,20 @@ export default function PaperBoat() {
                 }}
             ></div>
             <div
-                data-depth-x="0.4"
+                data-depth="0.4"
                 style={{
                     position: 'absolute',
                     top: '0',
                     left: '0',
-                    width: '100%',
+                    width: '112%',
                     height: '100%',
-                    backgroundImage: 'url(/parallax1-waves-back.png)', // Replace with your image path
+                    /* backgroundImage: 'url(/parallax1-waves-back.png)', */ // Replace with your image path
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}
-            ></div>
+            ><img src="/parallax1-waves-back.png" alt="Parallax waves" style={{ transform: 'translate(-200px, -80px)' }} /></div>
             <div
-                data-depth="0.6"
+                data-depth="0.7"
                 style={{
                     position: 'absolute',
                     top: '0',
@@ -84,12 +84,11 @@ export default function PaperBoat() {
                     left: '0',
                     width: '112%',
                     height: '100%',
-                    transform: 'translateX(-300px)',
-                    backgroundImage: 'url(/parallax1-waves-front.png)',
+                    /* backgroundImage: 'url(/parallax1-waves-front.png)', */
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}
-            ></div>
+            ><img src="/parallax1-waves-front.png" alt="Parallax waves" style={{ transform: 'translate(-200px, -80px)' }} /></div>
         </div>
     )
 }
