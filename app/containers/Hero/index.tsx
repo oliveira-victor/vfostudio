@@ -1,7 +1,7 @@
 
 import PaperBoat from '@/app/parallax/PaperBoat'
 import styles from './hero.module.css'
-import FlyingWhale from '@/app/parallax/FlyingWhale'
+/* import FlyingWhale from '@/app/parallax/FlyingWhale' */
 
 export default function Hero() {
 

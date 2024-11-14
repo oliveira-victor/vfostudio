@@ -1,0 +1,66 @@
+.whale {
+    animation: whale 30s ease-in-out infinite;
+}
+
+@keyframes whale {
+
+    0%,
+    30% {
+        transform: translatey(680px) rotate(-20deg);
+    }
+
+    50%,
+    70% {
+        transform: translatey(-40px) rotate(0deg);
+    }
+
+    60%,
+    80% {
+        transform: translatey(-20px) rotate(0deg);
+    }
+
+    90%,
+    100% {
+        transform: translatey(680px) rotate(-20deg);
+    }
+}
+
+.float {
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(-20px) rotate(0deg);
+    }
+
+    50% {
+        transform: translatey(-60px) rotate(6deg);
+    }
+
+    100% {
+        transform: translatey(-20px) rotate(0deg);
+    }
+}
+
+.waveFront {
+    animation: waves 4s ease-in-out infinite;
+}
+
+.waveBack {
+    animation: waves 8s ease-in-out infinite;
+}
+
+@keyframes waves {
+    0% {
+        transform: translate(-200px, -80px);
+    }
+
+    50% {
+        transform: translate(-200px, -120px);
+    }
+
+    100% {
+        transform: translate(-200px, -80px);
+    }
+}
