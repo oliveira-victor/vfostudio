@@ -19,7 +19,7 @@ export default function PaperBoat() {
             style={{
                 position: 'relative',
                 width: '100%',
-                height: '100vh', // Adjust as needed
+                height: '100vh',
                 overflow: 'hidden',
                 backgroundImage: 'url(/parallax1-bg.png)'
             }}
@@ -32,7 +32,7 @@ export default function PaperBoat() {
                     left: '0',
                     width: '100%',
                     height: '100%',
-                    backgroundImage: 'url(/parallax1-clouds.png)', // Replace with your image path
+                    backgroundImage: 'url(/parallax1-clouds.png)',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}
@@ -45,7 +45,7 @@ export default function PaperBoat() {
                     left: '0',
                     width: '100%',
                     height: '100%',
-                    backgroundImage: 'url(/parallax1-lighthouse.png)', // Replace with your image path
+                    backgroundImage: 'url(/parallax1-lighthouse.png)',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}
@@ -58,13 +58,25 @@ export default function PaperBoat() {
                     left: '0',
                     width: '112%',
                     height: '100%',
-                    /* backgroundImage: 'url(/parallax1-waves-back.png)', */ // Replace with your image path
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}
             ><img src="/parallax1-waves-back.png" alt="Parallax waves" style={{ transform: 'translate(-200px, -80px)' }} /></div>
             <div
                 data-depth="0.7"
+                style={{
+                    position: 'absolute',
+                    top: '0',
+                    left: '0',
+                    width: '100%',
+                    height: '100%',
+                    /* backgroundImage: 'url(/parallax1-whale.png)', */
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                }}
+            ><img className='whale' src="/parallax1-whale.png" alt="Parallax whale" /></div>
+            <div
+                data-depth="0.8"
                 style={{
                     position: 'absolute',
                     top: '0',
@@ -84,7 +96,6 @@ export default function PaperBoat() {
                     left: '0',
                     width: '112%',
                     height: '100%',
-                    /* backgroundImage: 'url(/parallax1-waves-front.png)', */
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}

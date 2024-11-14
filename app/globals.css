@@ -64,6 +64,26 @@ a {
   }
 }
 
+.whale {
+  animation: whale 30s ease-in-out infinite;
+}
+
+@keyframes whale {
+	0%, 30% {
+		transform: translatey(660px) rotate(-20deg);
+	}
+	50%, 70% {
+		transform: translatey(-40px) rotate(0deg);
+	}
+  60%, 80% {
+    transform: translatey(-20px) rotate(0deg);
+  }
+	90%, 100% {
+		transform: translatey(660px) rotate(-20deg);
+	}
+}
+
+
 /* .float {
   animation: float 6s ease-in-out infinite;
 }
