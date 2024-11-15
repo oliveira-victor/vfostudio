@@ -4,33 +4,33 @@ import { useEffect, useState } from 'react'
 
 import styles from './mobilemenu.module.css'
 
+function useScrollPosition() {
+    const [isScrolled, setIsScrolled] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 40) {
+                setIsScrolled(true)
+            } else {
+                setIsScrolled(false)
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll)
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
+
+    return isScrolled
+}
+
 export default function MobileMenu() {
 
-    function scrollPosition () {
-        const [isScrolled, setIsScrolled] = useState(false)
+    const isScrolled = useScrollPosition()
 
-        useEffect(() => {
-            const handleScroll = () => {
-                if (window.scrollY > 40) {
-                    setIsScrolled(true)
-                } else {
-                    setIsScrolled(false)
-                }
-            }
-
-            window.addEventListener('scroll', handleScroll)
-
-            return () => {
-                window.removeEventListener('scroll', handleScroll)
-            }
-        }, [])
-
-        return isScrolled
-    }
-
-    const isScrolled = scrollPosition()
-
-    return(
+    return (
         <nav className={`${styles.mobileMenu} ${isScrolled ? styles.showMenuBg : ''}`}>
             <ul className={styles.menuList}>
                 <li className={styles.menuItem}>
