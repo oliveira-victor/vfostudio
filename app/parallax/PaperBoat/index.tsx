@@ -34,11 +34,10 @@ export default function PaperBoat() {
                     left: '0',
                     width: '100%',
                     height: '100%',
-                    backgroundImage: 'url(/parallax1-clouds.webp)',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}
-            ></div>
+            ><img src="/parallax1-clouds.webp" alt="Parallax clouds" /></div>
             <div
                 data-depth="0.2"
                 style={{
@@ -47,11 +46,10 @@ export default function PaperBoat() {
                     left: '0',
                     width: '100%',
                     height: '100%',
-                    backgroundImage: 'url(/parallax1-lighthouse.webp)',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}
-            ></div>
+            ><img className={styles.lighthouse} src="/parallax1-lighthouse.webp" alt="Parallax lighthouse" /></div>
             <div
                 data-depth="0.4"
                 style={{
@@ -87,7 +85,7 @@ export default function PaperBoat() {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}
-            ><img className={styles.float} src="/parallax1-boat.webp" alt="Parallax boat" /></div>
+            ><img className={styles.boat} src="/parallax1-boat.webp" alt="Parallax boat" /></div>
             <div
                 data-depth-x="1.0"
                 style={{
