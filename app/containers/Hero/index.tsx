@@ -1,3 +1,4 @@
+'use client'
 
 import PaperBoat from '@/app/parallax/PaperBoat'
 import styles from './hero.module.css'
@@ -17,6 +18,10 @@ export default function Hero() {
         return data[randomNumber].art
     } */
 
+    function scrollDown() {
+        window.scrollBy(0, window.innerHeight)
+    }
+
     return (
         <div className={styles.heroContainer}>
             <menu className={styles.heroMenu}>
@@ -26,7 +31,7 @@ export default function Hero() {
                 <span className={styles.author}>by Victor Freire Oliveira</span>
                 <ul className={styles.heroList}>
                     <li>
-                        <button className={styles.heroBtn} type="button">Portfolio</button>
+                        <button onClick={scrollDown} className={styles.heroBtn} type="button">Portfolio</button>
                     </li>
                     <li>
                         <button className={styles.heroBtn} type="button">Services</button>
