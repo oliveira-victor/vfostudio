@@ -2,6 +2,7 @@
 
 import PaperBoat from '@/app/parallax/PaperBoat'
 import styles from './hero.module.css'
+import Title from '@/app/components/Title'
 /* import FlyingWhale from '@/app/parallax/FlyingWhale' */
 
 export default function Hero() {
@@ -24,11 +25,11 @@ export default function Hero() {
 
     return (
         <div className={styles.heroContainer}>
+            <div className={`${styles.mobileTitle} fadeIn`}>
+                <Title />
+            </div>
             <menu className={styles.heroMenu}>
-                <h1>
-                    <img className={styles.vfoLogo} src="./vfo-logo.svg" alt="VFO Studio - by Victor Freire Oliveira" />
-                </h1>
-                <span className={styles.author}>by Victor Freire Oliveira</span>
+                <Title />
                 <ul className={styles.heroList}>
                     <li>
                         <button onClick={scrollDown} className={styles.heroBtn} type="button">Portfolio</button>

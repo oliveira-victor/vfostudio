@@ -10,6 +10,14 @@
         margin-bottom: 60px;
     }
 
+    .mobileTitle {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        z-index: 2;
+    }
+
     .heroMenu {
         width: 500px;
         padding: 10px;
@@ -21,20 +29,6 @@
 
         @media (max-width: 900px) {
             display: none;
-        }
-
-        .vfoLogo {
-            width: 100px;
-            margin: 0 auto;
-            display: block;
-        }
-
-        .author {
-            margin-top: 14px;
-            font-size: 16px;
-            font-family: playtime, sans-serif;
-            display: block;
-            text-align: center;
         }
 
         .heroList {

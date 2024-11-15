@@ -1,0 +1,13 @@
+.vfoLogo {
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.author {
+    margin-top: 14px;
+    font-size: 16px;
+    font-family: playtime, sans-serif;
+    display: block;
+    text-align: center;
+}
