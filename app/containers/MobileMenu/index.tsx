@@ -1,8 +1,37 @@
+'use client'
+
+import { useEffect, useState } from 'react'
+
 import styles from './mobilemenu.module.css'
 
 export default function MobileMenu() {
+
+    function scrollPosition () {
+        const [isScrolled, setIsScrolled] = useState(false)
+
+        useEffect(() => {
+            const handleScroll = () => {
+                if (window.scrollY > 40) {
+                    setIsScrolled(true)
+                } else {
+                    setIsScrolled(false)
+                }
+            }
+
+            window.addEventListener('scroll', handleScroll)
+
+            return () => {
+                window.removeEventListener('scroll', handleScroll)
+            }
+        }, [])
+
+        return isScrolled
+    }
+
+    const isScrolled = scrollPosition()
+
     return(
-        <nav className={styles.mobileMenu}>
+        <nav className={`${styles.mobileMenu} ${isScrolled ? styles.showMenuBg : ''}`}>
             <ul className={styles.menuList}>
                 <li className={styles.menuItem}>
                     <img className={styles.menuIcon} src='./menu-icon-services.svg' alt="Services icon" />

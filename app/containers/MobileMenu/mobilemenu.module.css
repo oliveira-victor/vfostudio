@@ -35,3 +35,9 @@
         }
     }
 }
+
+.showMenuBg {
+    background-color: #fff;
+    transition: all 1s ease;
+    box-shadow: 10px 0px 7px rgba(0, 0, 0, 0.3);
+}
