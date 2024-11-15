@@ -1,7 +1,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --mobile: 767px;
+  --mainBg: #fff;
 }
 
 @media (prefers-color-scheme: dark) {

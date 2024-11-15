@@ -6,7 +6,8 @@
     align-items: center;
 
     @media (max-width: 767px) {
-        height: 94vh;
+        height: 88vh;
+        margin-bottom: 60px;
     }
 
     .heroMenu {
