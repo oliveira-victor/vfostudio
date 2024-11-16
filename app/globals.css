@@ -59,13 +59,6 @@ a {
   transform: rotate(-3deg);
 }
 
-.straightenCard {
-
-  @media (max-width: 767px) {
-    transform: rotate(0deg);
-  }
-}
-
 .fadeIn { animation: fadeIn 1.5s; }
 
 @keyframes fadeIn {
