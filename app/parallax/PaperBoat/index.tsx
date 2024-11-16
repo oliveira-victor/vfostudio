@@ -75,6 +75,18 @@ export default function PaperBoat() {
                 }}
             ><img className={styles.whale} src="/parallax1-whale.webp" alt="Parallax whale" /></div>
             <div
+                data-depth-x="0.4"
+                style={{
+                    position: 'absolute',
+                    top: '0',
+                    left: '0',
+                    width: '112%',
+                    height: '100%',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                }}
+            ><img className={styles.extraWave} src="/parallax1-waves-back.webp" alt="Parallax waves - extra" /></div>
+            <div
                 data-depth="0.8"
                 style={{
                     position: 'absolute',

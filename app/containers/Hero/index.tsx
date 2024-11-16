@@ -53,7 +53,10 @@ export default function Hero() {
                 </div>
             </menu>
             <PaperBoat />
-            <img className={styles.paper} src="./paper.webp" alt="Piece of paper" />
+            <div className={styles.paperBar}>
+                <img src="./paper.webp" alt="Piece of paper" />
+                <div className={styles.paperExtension}></div>
+            </div>
         </div>
     )
 }
