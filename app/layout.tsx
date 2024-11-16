@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "./containers/Footer";
+import Menu from "./containers/Menu";
+import MobileMenu from "./containers/MobileMenu";
 
 const playtime = localFont({
   src: "./fonts/playtime.ttf",
@@ -38,6 +40,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${playtime.variable} ${openSans.variable}`}>
+        <Menu />
+        <MobileMenu />
         {children}
         <Footer />
       </body>
