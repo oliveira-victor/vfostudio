@@ -32,10 +32,10 @@ export default function Hero() {
                 <Title />
                 <ul className={styles.heroList}>
                     <li>
-                        <button onClick={scrollDown} className={styles.heroBtn} type="button">Portfolio</button>
+                        <button onClick={scrollDown} className={styles.heroBtn} type="button">Services</button>
                     </li>
                     <li>
-                        <button className={styles.heroBtn} type="button">Services</button>
+                        <button className={styles.heroBtn} type="button">Portfolio</button>
                     </li>
                     <li>
                         <button className={styles.heroBtn} type="button">About</button>
